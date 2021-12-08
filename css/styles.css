@@ -17,10 +17,18 @@ body {
     height: 300px;
 }
 
-#menu {
+.menu {
     background: #B22222;
-    padding: 18px;
-    text-align: center;
+    padding: 15px;
+    text-align: right;
+}
+
+.logo-morumbi {
+    text-align: left;
+    width: 100px;
+    height: 30px;
+    padding-top: 1px;
+    padding-bottom: 2px;
 }
 
 #conteudo {
@@ -134,7 +142,8 @@ h2 {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    padding: 12px;
+    padding: 18px;
+    text-shadow: 0.1em 0.1em 0.2em #1C1C1C;
 }
 
 #menu-home:hover,
@@ -145,8 +154,9 @@ h2 {
 #menu-contato:focus,
 #menu-contato:hover,
 .active {
-    background-color: #1C1C1C;
-    border-radius: 10px;
+    color: black;
+    /* background-color: #1C1C1C;*/
+    width: 100%;
 }
 
 footer {
