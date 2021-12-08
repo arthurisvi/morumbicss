@@ -1,7 +1,7 @@
 /*#69b883 396248 df7b1d d76d2c cores scc*/
 
 body {
-    background: #1C1C1C;
+    background: white;
     font: 16px Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
@@ -28,8 +28,61 @@ body {
     padding: 20px;
 }
 
+.box {
+    color: white;
+    background: #B22222;
+    padding-top: 20px;
+    padding-right: 20px;
+    width: 250px;
+    height: 500px;
+    margin: 2.5px;
+    float: left;
+}
+
+.box:hover,
+.box:focus {
+    background-color: #1C1C1C;
+}
+
+.box-img {
+    border: 1px solid white;
+    width: 250px;
+    height: 180px;
+    margin: 10px;
+}
+
+.text-box {
+    padding: 10px;
+}
+
+.button-box {
+    width: 80px;
+    height: 35px;
+    color: white;
+    background-color: #B22222;
+    border: 1.5px solid white;
+    border-radius: 5px;
+}
+
+.button-box:hover,
+.button-box:focus {
+    background-color: white;
+    color: #1C1C1C;
+    font-weight: bold;
+}
+
+.clearfix {
+    clear: both
+}
+
 .container-img {
     width: 50%;
+}
+
+h2 {
+    padding: 5px;
+    text-align: center;
+    text-shadow: 0.1em 0.1em 0.2em #1C1C1C;
 }
 
 #mapa {
@@ -71,11 +124,12 @@ body {
 }
 
 footer {
+    background-color: #1C1C1C;
     color: white;
     text-align: center;
-    margin: 10px;
-    padding: 15px;
+    padding: 20px;
     font-size: 12px;
+    width: 100%;
 }
 
 h1 {
@@ -110,11 +164,13 @@ textarea {
 .enviar:focus {
     box-shadow: 5px 0px 9px #1C1C1C;
     background-color: #B22222;
-    color: black;
+    color: white;
     font-weight: bold;
 }
 
 .enviar {
+    background: #1C1C1C;
+    color: white;
     cursor: pointer;
 }
 
