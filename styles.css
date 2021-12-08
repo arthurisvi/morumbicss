@@ -3,11 +3,13 @@
 body {
     background: #1C1C1C;
     font: 16px Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    text-align: justify;
 }
 
 #container {
-    /*border: 1px solid white;*/
-    width: 900px;
+    width: 100%;
 }
 
 #morumbi {
@@ -26,19 +28,99 @@ body {
     padding: 20px;
 }
 
-a {
+.container-img {
+    width: 50%;
+}
+
+#mapa {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    text-align: center;
+}
+
+#frame-mapa {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#menu-home,
+#menu-historia,
+#menu-localizacao,
+#menu-contato {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    border: 1px solid #1C1C1C;
     padding: 12px;
 }
 
-#rodape {
+#menu-home:hover,
+#menu-home:focus,
+#menu-historia:hover,
+#menu-localizacao:focus,
+#menu-localizacao:hover,
+#menu-contato:focus,
+#menu-contato:hover,
+.active {
+    background-color: #1C1C1C;
+    border-radius: 10px;
+}
+
+footer {
     color: white;
     text-align: center;
+    margin: 10px;
+    padding: 15px;
+    font-size: 12px;
 }
 
 h1 {
     font-size: 1.2em
+}
+
+.img-historia {
+    object-fit: contain;
+    border: 5px solid #1C1C1C;
+    width: 100%;
+    height: 100%;
+}
+
+form {
+    font-size: 15px;
+    max-width: 500px;
+}
+
+input,
+textarea {
+    width: 50%;
+    padding: 10px;
+    color: black;
+    margin-top: 10px;
+    margin-left: 20px;
+    border: 1px solid;
+    border-radius: 10px;
+    font: 14px Arial, Helvetica, sans-serif;
+}
+
+.enviar:hover,
+.enviar:focus {
+    box-shadow: 5px 0px 9px #1C1C1C;
+    background-color: #B22222;
+    color: black;
+    font-weight: bold;
+}
+
+.enviar {
+    cursor: pointer;
+}
+
+textarea {
+    width: 50%;
+    height: 120px;
+    max-width: 400px;
+    line-height: 20px;
 }
